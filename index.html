@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+    function myfunction(){
+        setInterval(myfunction,1000);
+        let d = new Date();
+        document.getElementById("container").innerHTML=d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+    }
+</script>
+<body id="container">
+    click above button to see time
+</body>
+<button id="click", onclick= setTimeout(myfunction,0);>
+click me
+</button>
+</html>
